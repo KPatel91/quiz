@@ -1,0 +1,16 @@
+body{
+    margin-left:50px;
+    background-color: black;
+}
+
+#wrapper {
+    width: 100%;
+}
+#container {
+    min-width: 700px;
+    width: 50%;
+    margin: auto;
+    background-color:pink;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2em;
+}
