@@ -14,27 +14,31 @@
 <body>
     <div id="container">
         <div id="wrapper">
-            <section class="header">
-                <h1>Programming Quiz!</h1>
-            </section>
-            <section class="question">
-                <div class="questionText">
 
-                </div>
-                <div class="seperator"></div>
-                <div class="answers">
-                    <!-- radio buttons-->
-
-                    <button id="submit" onclick="checkAnswer()">Submit!</button>
-                </div>
-
+            <section class="question" id="opening">
+                <p>Welcome to the Programming Quiz, please start!</p>
+                <div id="button"><button id="start" onclick="startQuiz()">Start!</button></div>
             </section>
 
-
-
-
+            <section id="questions" class="question hide">
+                <div id="questionsMain">
+                    <div class="questionText">
+                        <p></p>
+                    </div>
+                    <br />
+                    <div class="answers">
+                        <div class="radios"><input type="radio" name="q" value="1" id="q1"><label id="l1"></label><br /></div>
+                        <div class="radios"><input type="radio" name="q" value="2" id="q2"><label id="l2"></label><br /></div>
+                        <div class="radios"><input type="radio" name="q" value="3" id="q3"><label id="l3"></label><br /></div>
+                        <div class="radios"><input type="radio" name="q" value="4" id="q4"><label id="l4"></label><br /></div>
+                        <button id="submit" onclick="checkAnswer()">Submit!</button>
+                    </div>
+                </div>
+                <br /><br />
+                <div id="feedback"><p></p></div><br />
+                <div id="refresh" class="hide"><button id="refreshbtn" onclick="location.reload()">Restart!</button></div>
+            </section>
         </div>
     </div>
-
 </body>
 </html>
